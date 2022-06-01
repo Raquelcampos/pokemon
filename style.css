@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game{
+    width: 80%;
+    height: 500px;
+    background:linear-gradient(180deg,  red, orange, yellow);
+    border: 2px solid blue;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.pokeball{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: -80px;
+    animation: pokeball 3s infinite linear;
+}
+.pokemon{
+    position: absolute;
+    bottom: 0;
+    width: 90px;
+   
+}
+.jump{
+   animation: jump 3s infinite ease-out;
+}
+@keyframes pokeball{
+from{
+right: 0;
+}
+to{
+right: 100%;
+}
+}
+@keyframes jump{
+
+0%{
+    bottom: 0;
+}
+40%{
+    bottom: 180px;
+}
+50%{
+    bottom: 180px;
+}
+60%{
+    bottom: 180px;
+}
+100%{
+    bottom: 0;
+}
+
+}
